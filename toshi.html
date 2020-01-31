@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toshinroi tamashiro dayo</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>yeah</h1>
+<img border="0" src="../images/sample.bmp" width="128" height="128" alt="イラスト1">
+<canvas id="canvas2" width=300 height=300></canvas>
+<script type="text/javascript">
+var canvas = document.getElementById("canvas2");
+var context = canvas.getContext("2d");
+
+context.fillRect(0, 0, 100, 100);
+context.strokeRect(100, 100, 50, 50);
+
+context.beginPath();
+context.moveTo(10, 200);
+context.lineTo(100, 250);
+context.moveTo(100, 250);
+context.lineTo(200, 200);
+context.rect(150, 250, 50, 50);
+context.stroke();
+context.closePath();
+</script>
+</body>
+</html>
